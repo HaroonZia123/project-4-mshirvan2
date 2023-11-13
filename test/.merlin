@@ -1,0 +1,11 @@
+B /root/.opam/system/lib/bytes
+B /root/.opam/system/lib/oUnit
+B /usr/lib/ocaml
+B ../_build/default/src/.p4.objs
+B ../_build/default/test/.testUtils.objs
+S /root/.opam/system/lib/bytes
+S /root/.opam/system/lib/oUnit
+S /usr/lib/ocaml
+S ../src
+S .
+FLG -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs

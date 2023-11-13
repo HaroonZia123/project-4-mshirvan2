@@ -1,0 +1,5 @@
+(** @canonical P4.Basics *)
+module Basics = P4__Basics
+
+(** @canonical P4.Funs *)
+module Funs = P4__Funs

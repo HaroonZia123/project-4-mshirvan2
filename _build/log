@@ -1,0 +1,12 @@
+# dune runtest test/public
+# OCAMLPARAM: unset
+$ /usr/bin/nproc > /tmp/dune036361.output 2> /dev/null
+$ /usr/bin/ocamlc.opt -config > /tmp/dune46795c.output
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/basics.ml) > _build/default/src/.p4.objs/basics.ml.d
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -A -g -I src/.p4.objs -I src/.p4.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open P4 -o src/.p4.objs/p4__Basics.cmx -c -impl src/basics.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -A -g -a -o src/p4.cmxa src/.p4.objs/p4.cmx src/.p4.objs/p4__Funs.cmx src/.p4.objs/p4__Basics.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/public/public.exe -I /root/.opam/system/lib/bytes -I /root/.opam/system/lib/oUnit -I src -I test src/p4.cmxa /usr/lib/ocaml/unix.cmxa /root/.opam/system/lib/oUnit/oUnitAdvanced.cmxa /root/.opam/system/lib/oUnit/oUnit.cmxa test/testUtils.cmxa test/public/.public.eobjs/public.cmx)
+$ (cd _build/default/test/public && ./public.exe)
+> ..................
+> Ran: 18 tests in: 0.15 seconds.
+> OK
